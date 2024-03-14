@@ -1,0 +1,338 @@
+/*
+Стили, скопированные с mashademianova.com
+Приносим изменения за плагиат, это все в целях обучения 🙏
+*/
+/*
+Стили, скопированные с mashademianova.com
+Приносим изменения за плагиат, это все в целях обучения 🙏
+*/
+body {
+	font-family:sans-serif;
+	font-size:14px;
+	font-weight:500;
+	margin:0;
+	padding:0;
+	letter-spacing:1px;
+	text-rendering:optimizeLegibility;
+	-webkit-overflow-scrolling:touch;
+	-webkit-font-smoothing:antialiased
+}
+* {
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box
+}
+ul {
+	margin:0;
+	padding:0;
+	list-style-type:none
+}
+img {
+	display:block;
+	width:100%
+}
+a {
+	text-decoration:none;
+	color:#000
+}
+a:hover {
+	text-decoration:underline
+}
+.active-item {
+	display:block
+}
+.lazy.loading {
+	-webkit-filter:blur(2px);
+	filter:blur(2px)
+}
+.lazy.loaded {
+	-webkit-animation-name:lazyLoad;
+	animation-name:lazyLoad;
+	-webkit-animation-duration:1s;
+	animation-duration:1s
+}
+@-webkit-keyframes lazyLoad {
+	0%{-webkit-filter:blur(2px);
+	filter:blur(2px)}
+	to {-webkit-filter:blur(0);
+	filter:blur(0)}
+}
+@keyframes lazyLoad {
+	0%{-webkit-filter:blur(2px);
+	filter:blur(2px)}
+	to{-webkit-filter:blur(0);
+	filter:blur(0)}
+}
+.container {
+	padding:10px
+}
+@media only screen and (min-width: 1024px) {
+	.container{padding:20px}
+}
+.container.menu-opened {
+	overflow:hidden;
+	height:90vh
+}
+.container .content {
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-flex-wrap:nowrap;
+	-ms-flex-wrap:nowrap;
+	flex-wrap:nowrap;
+	margin-top:60px
+}
+.container .content .project-content {
+	width:100%;
+	max-width:1040px;
+	margin:0 auto 10px
+}
+.homepage-pic {
+	position:absolute;
+	top:50%;
+	left:50%;
+	display:block;
+	-webkit-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%)
+}
+@media only screen and (min-width: 1024px) {
+	.homepage-pic
+		{
+			position:relative;
+			top:auto;
+			left:auto;
+			margin:0;
+			-webkit-transform:none;
+			-ms-transform:none;
+			transform:none
+	}
+}
+.header {
+	position:fixed;
+	z-index:99;
+	top:0;
+	right:10px;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	width:100%;
+	height:33px;
+	padding-left:20px;
+	background:#fff;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+@media only screen and (min-width: 1024px) {
+	.header {
+		height:55px;
+		padding-left:30px;
+		background:transparent
+	}
+}
+.header .logo,.header .menu-toggle {
+	text-transform:uppercase
+}
+	.header .menu-toggle {
+		margin-left:auto
+}
+@media only screen and (min-width: 1024px) {
+	.header .menu-toggle {
+		display:none
+	}
+}
+@media only screen and (min-width: 1024px) {
+	.menu-wrapper {
+		width:100%;
+		max-width:240px;
+		height:100%
+	}
+}
+.menu {
+	position:absolute;
+	z-index:9;
+	display:none;
+	width:100%;
+	height:100%;
+	padding-left:10px;
+	left:0;
+	background:#fff
+}
+@media only screen and (min-width: 1024px) {
+	.menu {
+		position:fixed;
+		display:block;
+		width:100%;
+		max-width:200px;
+		height:100%;
+		margin-left:20px;
+		padding-left:0
+	}
+}
+.menu.active {
+	display:block;
+	overflow-y:scroll
+}
+	.menu .section-name {
+		margin-bottom:20px;
+		cursor:pointer
+}
+.menu .section-name.active-item .client-name,.menu .section-name.active-item>.project-item {
+	display:block
+}
+.menu .section-name.active-item.video {
+	text-decoration:underline
+}.menu
+.section-name.contact {
+	margin-top:40px
+}
+@media only screen and (min-width: 1024px) {
+	.menu .section-name span:hover {
+		text-decoration:underline
+	}
+}
+.menu .section-name span.main {
+	text-transform:uppercase
+}
+.menu .section-name .client-name {
+	display:none;
+	margin:15px 0
+}
+@media only screen and (min-width: 1024px) {
+	.menu .section-name .client-name {
+		margin:5px 0
+	}
+}
+.menu .section-name .client-name.active-item span.child {
+	text-decoration:underline
+}
+.menu .section-name .client-name.parent span.child {
+	text-decoration:none
+}
+.menu .section-name .client-name.parent span.child:hover {
+	text-decoration:underline
+}
+.menu .section-name .client-name:nth-child(2) {
+	margin-top:20px;
+	margin-bottom:0
+}
+.menu .section-name .client-name:last-child {
+	margin-bottom:20px
+}
+.menu .section-name .client-name.active-item .project-item {display:block
+}
+.menu .section-name .client-name .project-list .project-item {
+	margin:5px 15px
+}
+.menu .section-name .client-name .project-list .project-item:first-child {
+	margin-top:10px
+}
+.menu .section-name .client-name .project-list .project-item:last-child {
+	margin-bottom:10px
+}
+.menu .section-name>.project-item {
+	margin:10px 0
+}
+@media only screen and (min-width: 1024px) {
+	.menu .section-name>.project-item 
+		{margin:5px 0
+	}
+}
+.menu .section-name>.project-item:nth-child(2) {
+	margin-top:20px
+}
+.menu .section-name>.project-item:last-child {
+	margin-bottom:20px
+}
+.menu .section-name .project-item {
+	display:none
+}
+.menu .section-name .project-item.active-item {
+	text-decoration:underline
+}
+.title {
+	text-transform:uppercase;
+	margin-bottom:10px
+}
+@media only screen and (min-width: 1024px) {
+	.title {
+		margin-bottom:20px;
+		margin-left:20px
+	}
+}
+.image-grid {
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	width:100%;
+	-webkit-flex-wrap:wrap;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
+	-webkit-align-content:stretch;
+	-ms-flex-line-pack:stretch;
+	align-content:stretch
+}
+@media only screen and (min-width: 1024px) {
+	.image-grid {
+		margin-left:10px
+	}
+}
+.image-grid .fullscreen,.image-grid .halfscreen {
+	display:inline-block;
+	width:100%;
+	max-width:100%;
+	margin:0;
+	padding:5px 0;
+	vertical-align:top
+}
+@media only screen and (min-width: 1024px) {
+	.image-grid .fullscreen,.image-grid .halfscreen {
+		padding:0 10px 20px
+	}
+}
+.image-grid .fullscreen {
+	width:100% 
+}
+@media only screen and (min-width: 1024px) {
+	.image-grid .halfscreen {
+		width:50%
+	}
+}
+.description {
+	text-transform:uppercase;
+	margin-top:10px
+}
+.description a {
+	text-decoration:underline
+}
+@media only screen and (min-width: 1024px) {
+	.description {
+		margin-top:0;
+		margin-left:20px
+	}
+}
+.video-container {
+	position:relative;
+	overflow:hidden;
+	height:0;
+	margin-top:20px;
+	padding-top:35px;
+	padding-bottom:56.25%
+}
+@media only screen and (min-width: 1024px) {
+	.video-container {
+		margin-left:20px
+	}
+}
+.video-container iframe {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%
+}
+
