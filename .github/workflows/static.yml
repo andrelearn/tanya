@@ -34,7 +34,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Run Eleventy
-        run: npx @11ty/eleventy
+        run: npx @11ty/eleventy --pathprefix=tanya
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
