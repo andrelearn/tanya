@@ -1,8 +1,10 @@
 {
-  "name": "fotograf",
+  "name": "tanya",
   "version": "1.0.0",
-  "description": "",
+  "description": "Сайт Тани Климович",
   "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve"
   },
   "keywords": [],
   "author": "",
