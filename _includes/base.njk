@@ -15,93 +15,97 @@
 		<div class="header">
 			<a class="logo" href="/">Tanya Klimovich</a>
 			<div class="menu-toggle">menu</div>
-		</div>
-			<div class="content">
+			</div>
+		<div class="content">
 			<div class="menu-wrapper">
 				<div class="menu">
-					<div class="section-name">
+					<div class="section-name {% if page.url.includes('/fashion/') %} active-item{%endif %}">
 						<span class="main">Fashion</span>
-						<div class="client-name">
+						{%- for project in fashion.projects %}
+						<div class="client-name{% if page.url == project.url %} active-item{%endif%}">
 							<span class="child">
-								<a href="/fashion/a3">A3 Starting point</a>
+								<a href="{{ project.url }}">{{ project.name }}</a>
 							</span>
 						</div>
-						<div class="client-name">
+						{%- endfor %}
+						<div class="client-name{% if page.url == project.url %} active-item{%endif%}">
 							<span class="child">
-								<a href="/fashion/dlwhsos">DL Which Hunt Sos</a>
+								<a href="{{ project.url }}">{{ project.name }}</a>
 							</span>
 						</div>
-						<div class="client-name">
+						<div class="client-name{% if page.url == project.url %} active-item{%endif%}">
 							<span class="child">
-								<a href="/fashion/bmxhse">Badlon Magazine x HSE Art and Design School</a>
+								<a href="{{ project.url }}">{{ project.name }}</a>
 							</span>
 						</div>
-						<div class="client-name">
+						<div class="client-name{% if page.url == project.url %} active-item{%endif%}">
 							<span class="child">
-								<a href="/fashion/soakpods">Soak pods</a>
+								<a href="{{ project.url }}">{{ project.name }}</a>
 							</span>
 						</div>
-						<div class="client-name">
+						<div class="client-name{% if page.url == project.url %} active-item{%endif%}">
 							<span class="child">
-								<a href="/fashion/metropolis">Metropolis</a>
+								<a href="{{ project.url }}">{{ project.name }}</a>
 							</span>
 						</div>
-						<div class="client-name">
+						<div class="client-name{% if page.url == project.url %} active-item{%endif%}">
 							<span class="child">
-								<a href="/fashion/inshadess">Inshade streetstyle</a>
+								<a href="{{ project.url }}">{{ project.name }}</a>
 							</span>
 						</div>
-						<div class="client-name">
+						<div class="client-name{% if page.url == project.url %} active-item{%endif%}">
 							<span class="child">
-								<a href="/fashion/wosstreetstyle">WOS streetstyle</a>
+								<a href="{{ project.url }}">{{ project.name }}</a>
 							</span>
 						</div>
-						<div class="client-name">
+						<div class="client-name{% if page.url == project.url %} active-item{%endif%}">
 							<span class="child">
-								<a href="/fashion/mardoss">Mardo streetstyle</a>
+								<a href="{{ project.url }}">{{ project.name }}</a>
 							</span>
 						</div>
-						<div class="client-name">
+						<div class="client-name{% if page.url == project.url %} active-item{%endif%}">
 							<span class="child">
-								<a href="/fashion/dltglanded">DL The Girl Landed</a>
+								<a href="{{ project.url }}">{{ project.name }}</a>
 							</span>
 						</div>
-						<div class="client-name">
+						<div class="client-name{% if page.url == project.url %} active-item{%endif%}">
 							<span class="child">
-								<a href="/fashion/nottoday">Not Today</a>
+								<a href="{{ project.url }}">{{ project.name }}</a>
 							</span>
 						</div>
-						<div class="client-name">
+						<div class="client-name{% if page.url == project.url %} active-item{%endif%}">
 							<span class="child">
-								<a href="/fashion/push">Push</a>
+								<a href="{{ project.url }}">{{ project.name }}</a>
 							</span>
 						</div>
-						<div class="client-name">
+						<div class="client-name{% if page.url == project.url %} active-item{%endif%}">
 							<span class="child">
-								<a href="/fashion/romauvarovd">Roma Uvarov Design</a>
+								<a href="{{ project.url }}">{{ project.name }}</a>
 							</span>
 						</div>
 					</div>
-					<div class="section-name">
+					<div class="section-name {% if page.url.includes('/art/') %} active-item{%endif %}">
 						<span class="main">Art</span>
-						<div class="project-item">
+						{%- for project in art.projects %}
+						<div class="project-item{% if page.url == project.url %} active-item{%endif%}">
 							<span class="child">
-								<a href="/art/ioannesbx">Ioannes Benedict X</a>
+								<a href="{{ project.url }}">{{ project.name }}</a>
 							</span>
 						</div>
-						<div class="project-item">
+						{%- endfor %}
+						<div class="project-item{% if page.url == project.url %} active-item{%endif%}">
 							<span class="child">
-								<a href="/art/vhshandycum">VHS Handycam</a>
+								<a href="{{ project.url }}">{{ project.name }}</a>
 							</span>
 						</div>
-						<div class="project-item">
+						<div class="project-item{% if page.url == project.url %} active-item{%endif%}">
 							<span class="child">
-								<a href="/art/studyspshoes">Study subject: pointy shoes</a>
+								<a href="{{ project.url }}">{{ project.name }}</a>
 							</span>
 						</div>
-						<div class="project-item">
+						<div class="project-item{% if page.url == project.url %} active-item{%endif%}">
 							<span class="child">
-								<a href="/art/spacecity">Space city</a>
+								<a href="{{ project.url }}">{{ project.name }}</a>
 							</span>
 						</div>
 					</div>
