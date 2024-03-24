@@ -1,10 +1,10 @@
 {
-  "name": "fotograf",
+  "name": "tanya",
   "version": "1.0.0",
-  "description": "",
-  "main": "JIES.js",
+  "description": "Сайт Тани Климович",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve"
   },
   "keywords": [],
   "author": "",
