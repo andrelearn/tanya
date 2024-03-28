@@ -35,8 +35,8 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install dependencies
         run: npm install
-      - name: Run Eleventy
-        run: npx @11ty/eleventy --pathprefix=tanya
+      - name: Build site
+        run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
