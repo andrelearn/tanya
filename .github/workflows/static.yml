@@ -37,6 +37,8 @@ jobs:
         run: npm install
       - name: Build site
         run: npm run build
+        env:
+          PATHPREFIX: ${{ vars.PATHPREFIX }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
