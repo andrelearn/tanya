@@ -28,18 +28,23 @@
 						</div>
 						{%- endfor %}
 					</div>
-					<div class="section-name {% if page.url.includes('/art/') %} active-item{%endif %}">
+					<div class="section-name{% if page.url.includes('/art/') %} active-item{% endif %}">
 						<span class="main">Art</span>
 						{%- for project in art.projects %}
-						<div class="project-item{% if page.url == project.url %} active-item{%endif%}">
+						<div class="project-item{% if page.url == project.url %} active-item{% endif %}">
 							<span class="child">
 								<a href="{{ project.url }}">{{ project.name }}</a>
 							</span>
 						</div>
 						{%- endfor %}
 					</div>
+					<div class="section-name video{% if page.url.includes('/diary') %} active-item{% endif %}">
+						<span class="main">
+							<a href="/diary">Diary</a>
+						</span>
+					</div>
 					<div class="section-name contact">
-					  <span>Contact</span>
+					  <span class="main">Contact</span>
 						  <div class="client-name">
 						  	<span class="child">
 						  	  <a href="https://t.me/tanya_klimovich" target="_blank">Telegram</a>
