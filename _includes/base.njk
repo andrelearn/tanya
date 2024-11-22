@@ -7,24 +7,34 @@
   <link rel="stylesheet" href="/main.css">
 </head>
 <body>
-<nav>
-<ul>
-  <li>{% if page.url == '/' %}Home{% else %}<a href="/">Home</a>{% endif %}</li>
-  <li>{% if page.url == '/fashion/' %}Fashion{% else %}<a href="/fashion">Fashion</a>{% endif %}</li>
-  <li>{% if page.url == '/art/' %}Art{% else %}<a href="/art">Art</a>{% endif %}</li>
-  <li>{% if page.url == '/diary/' %}Diary{% else %}<a href="/diary">Diary</a>{% endif %}</li>
-</ul>
-<ul class="contacts">
-  <li><a href="https://t.me/tanya_klimovich" target="_blank">Telegram</a></li>
-  <li><a href="https://www.instagram.com/tanyaklimovich_archive" target="_blank">Instagram</a></li>
-  <li><a href="mailto:tanya.klimovich@gmail.com">Email</a></li>
-</ul>
-</nav>
 <header>
-<h1>{{ title }}</h1>
+<div class="wrapper">
+  <div>
+    {% if page.url != '/' %}<a href="/">{% endif %}
+    <h1>Tanya Klimovich</h1>
+    {% if page.url != '/' %}</a>{% endif %}
+  </div>
+  <div>
+    <p>{{ description }}</p>
+  </div>
+</div>
 </header>
 <main>
 {{ content | safe }}
 </main>
+<footer>
+<div class="wrapper">
+  <ul>
+    <li>{% if page.url == '/fashion/' %}Fashion{% else %}<a href="/fashion">Fashion</a>{% endif %}</li>
+    <li>{% if page.url == '/art/' %}Art{% else %}<a href="/art">Art</a>{% endif %}</li>
+    <li>{% if page.url == '/diary/' %}Diary{% else %}<a href="/diary">Diary</a>{% endif %}</li>
+  </ul>
+  <ul>
+    <li><a href="https://t.me/tanya_klimovich" target="_blank">Telegram</a></li>
+    <li><a href="https://www.instagram.com/tanyaklimovich_archive" target="_blank">Instagram</a></li>
+    <li><a href="mailto:tanya.klimovich@gmail.com">tanya.klimovich@gmail.com</a></li>
+  </ul>
+</div>
+</footer>
 </body>
 </html>
