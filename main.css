@@ -48,15 +48,10 @@ ul {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: auto;
   grid-column-gap: 1em;
   grid-row-gap: 1em;
-}
-
-.extend {
-  grid-column-start: 1;
-  grid-column-end: 3;
 }
 
 header {
